@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_careflow_events
+    description: "Cleaned and standardized hospital patient event records"
+
+    columns:
+      - name: case_id
+        description: "Unique identifier for each patient journey"
+        data_tests:
+          - not_null
+
+      - name: activity_name
+        description: "Hospital activity performed by the patient"
+        data_tests:
+          - not_null
+
+      - name: event_timestamp
+        description: "Timestamp when the hospital activity occurred"
+        data_tests:
+          - not_null
