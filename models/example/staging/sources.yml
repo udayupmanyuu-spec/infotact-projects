@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: careflow_raw
+    database: shaped-density-512611-m6
+    schema: careflow_raw
+    tables:
+      - name: careflow_events_as_is
